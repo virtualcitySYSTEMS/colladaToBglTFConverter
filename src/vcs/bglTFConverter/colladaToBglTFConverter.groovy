@@ -39,7 +39,7 @@ class colladaToBglTFConverter {
 		def steps = fileCount /100;
 		println("Converting " + fileCount + " dae files");		
 		jsr166y.ForkJoinPool currentPool
-		GParsPool.withPool 1,{ pool ->
+		GParsPool.withPool 4,{ pool ->
 			currentPool = pool;
 			files.eachParallel { File file->				
 				def command = collada2gltfTool + ' -r -f ' + file.name + ' -o ' + file.name[0..-4] + 'gltf'
