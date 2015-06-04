@@ -1,7 +1,7 @@
-# colladaToBGLTFConverter
+colladaToBglTFConverter
 =====
 
-colladaToBglTFConverter is a small groovy/JavaScript tool to convert COLLADA data sets into the binary-glTF Format that is used, for example, in Cesium 1.10. 
+colladaToBglTFConverter is a small groovy/JavaScript tool to convert COLLADA data sets into the binary-glTF format, that is used in Cesium 1.10. 
 Follow this [link](http://cesiumjs.org/2015/06/01/Binary-glTF/) for more details.
 
 
@@ -20,8 +20,8 @@ Follow this [link](http://cesiumjs.org/2015/06/01/Binary-glTF/) for more details
 1. License
 ----------
 
-The scripts for colladaToBGLTFConverter are open source under Apache 2.0 license.
-See the file LICENSE for more details. 
+The scripts for colladaToBglTFConverter are open source under Apache 2.0 license.
+See the [LICENSE](https://github.com/virtualcitySYSTEMS/colladaToBglTFConverter/blob/master/LICENSE) file for more details. 
 
 
 2. About
@@ -44,7 +44,7 @@ First download the necessary tools:
 * colladaToBglTFConverter.jar from https://github.com/virtualcitySYSTEMS/colladaToBglTFConverter/releases
 * collada2gltf.exe from https://github.com/KhronosGroup/glTF/wiki/Converter-builds
 
-Then, run the following from CLI:
+Then, run the following command from CLI:
 <pre>java -jar colladaToBglTFConverter.jar -c collada2gltf.exe -i inputPath -o outputPath</pre>
 
 
