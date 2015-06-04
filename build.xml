@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project colladaToBglTFConverter with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="build/colladaToBgltfConverter.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="vcs.bglTFConverter.colladaToBglTFConverter"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ gpars-1.2.1.jar jsr166y-1.7.0.jar multiverse-core-0.7.0.jar netty-3.2.9.Final.jar groovy-all-2.4.1.jar bsf-2.4.0.jar ivy-2.3.0-sources.jar ivy-2.3.0.jar servlet-api-2.4.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="bin"/>
+            <zipfileset dir="lib" includes="gpars-1.2.1.jar"/>
+            <zipfileset dir="lib" includes="jsr166y-1.7.0.jar"/>
+            <zipfileset dir="lib" includes="multiverse-core-0.7.0.jar"/>
+            <zipfileset dir="lib" includes="netty-3.2.9.Final.jar"/>
+            <zipfileset dir="D:\Software\eclipseKepler\plugins\org.codehaus.groovy_2.4.1.xx-201502281941-e44\lib" includes="groovy-all-2.4.1.jar"/>
+            <zipfileset dir="D:\Software\eclipseKepler\plugins\org.codehaus.groovy_2.4.1.xx-201502281941-e44\lib" includes="bsf-2.4.0.jar"/>
+            <zipfileset dir="D:\Software\eclipseKepler\plugins\org.codehaus.groovy_2.4.1.xx-201502281941-e44\lib" includes="ivy-2.3.0-sources.jar"/>
+            <zipfileset dir="D:\Software\eclipseKepler\plugins\org.codehaus.groovy_2.4.1.xx-201502281941-e44\lib" includes="ivy-2.3.0.jar"/>
+            <zipfileset dir="D:\Software\eclipseKepler\plugins\org.codehaus.groovy_2.4.1.xx-201502281941-e44\lib" includes="servlet-api-2.4.jar"/>
+            <fileset dir="C:/Users/jbolling/.groovy/greclipse/global_dsld_support"/>
+            <fileset dir="D:/Software/eclipseKepler/plugins/org.codehaus.groovy_2.4.1.xx-201502281941-e44/plugin_dsld_support/"/>
+        </jar>
+    </target>
+</project>

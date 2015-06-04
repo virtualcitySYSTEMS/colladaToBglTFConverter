@@ -26,7 +26,7 @@ public class GLTFBinaryIntegrator {
 	List<ImageItem> images = new ArrayList<ImageItem>()
 	List<ShaderItem> shader = new ArrayList<ShaderItem>()
 	
-	void doIntegration(String gltfFileName){		
+	void doIntegration(String gltfFileName, String binaryFilePath, String binaryFileName){		
 		Path gltfPath = Paths.get(gltfFileName);
 		path = gltfPath.parent;
 		
@@ -81,12 +81,18 @@ public class GLTFBinaryIntegrator {
 		}
 
 		buffer.put(jsonBytes);
-		String binaryFilename =  gltfFileName[0..-5] + "bgltf";
+		//String binaryFilename =  gltfFileName[0..-5] + "bgltf";
 		//println(binaryFilename);
-		this.writeSmallBinaryFile(buffer.array(), binaryFilename );
+		this.writeSmallBinaryFile(buffer.array(),binaryFilePath, binaryFileName );
 	}
-	void writeSmallBinaryFile(byte[] aBytes, String aFileName) throws IOException {
-		Path path = Paths.get(aFileName);
+	void writeSmallBinaryFile(byte[] aBytes, String aDirectoryName, String aFileName) throws IOException {
+		Path path = Paths.get(aDirectoryName);
+		try{
+			Files.createDirectories(path);
+		}catch(FileAlreadyExistsException){
+			// 	do nothing, we just overwrite the file
+		}
+		path = Paths.get(aDirectoryName + aFileName);
 		Files.write(path, aBytes); //creates, overwrites
 	  }
 	def parseGLTFOrig(String filename){
