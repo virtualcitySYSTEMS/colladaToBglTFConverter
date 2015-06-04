@@ -1,4 +1,4 @@
-package iterator
+package vcs.bglTFConverter
 
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper

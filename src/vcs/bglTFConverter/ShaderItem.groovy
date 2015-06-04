@@ -1,4 +1,4 @@
-package iterator
+package vcs.bglTFConverter
 
 import java.nio.charset.StandardCharsets
 import java.nio.file.Files

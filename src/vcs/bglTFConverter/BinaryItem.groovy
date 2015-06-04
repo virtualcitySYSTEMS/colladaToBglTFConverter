@@ -1,4 +1,4 @@
-package iterator
+package vcs.bglTFConverter
 
 import java.awt.image.BufferedImage
 import java.nio.file.Files
