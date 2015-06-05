@@ -11,10 +11,10 @@ Follow this [link](http://cesiumjs.org/2015/06/01/Binary-glTF/) for more details
 1. License
 2. About
 3. System requirements
-5. How To
-8. Developers
-9. Contact
-11. Disclaimer
+4. How To
+5. Developers
+6. Contact
+7. Disclaimer
 
 
 1. License
