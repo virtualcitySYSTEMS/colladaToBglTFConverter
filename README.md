@@ -1,7 +1,7 @@
 colladaToBglTFConverter
 =====
 
-colladaToBglTFConverter is a small groovy/JavaScript tool to convert COLLADA data sets into the binary-glTF format, that is used in Cesium 1.10. 
+colladaToBglTFConverter is a small groovy/Java tool to convert COLLADA data sets into the binary-glTF format, that is used in Cesium 1.10. 
 Follow this [link](http://cesiumjs.org/2015/06/01/Binary-glTF/) for more details.
 
 
